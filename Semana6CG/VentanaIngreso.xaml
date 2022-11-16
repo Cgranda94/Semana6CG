@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana6CG.VentanaIngreso" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Ventana de registro" FontSize="20" VerticalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="INgrese el codigo" FontSize="  Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtCodigo" Placeholder="Codigo" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="INgrese su nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="INgrese su apellido" FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="INgrese su edad" FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="3" Grid.Column="1"/>
+                <Button x:Name="bntActualizar" Text="ACTUALIZAR" Clicked="bntActualizar_Clicked"  Grid.Row="5" Grid.Column="0"/>
+                <Button x:Name="bntEliminar" Text="ELIMINAR" Clicked="bntEliminar_Clicked"  Grid.Row="5" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="bntRegresar" Text="REGRESAR" Clicked="bntRegresar_Clicked"  HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
